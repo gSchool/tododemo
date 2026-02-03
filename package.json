@@ -1,0 +1,24 @@
+{
+  "name": "tododemo",
+  "version": "1.23.25486",
+  "description": "To Do Demo for the Jan Fam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server .",
+    "jordan": "npm install && live-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MWegenke/tododemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MWegenke/tododemo/issues"
+  },
+  "homepage": "https://github.com/MWegenke/tododemo#readme",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
