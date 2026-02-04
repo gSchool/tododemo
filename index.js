@@ -39,12 +39,6 @@ function grabUserInput(){
   userInput.value=""
 }
 
-
-function clickTask(id){
-  let task = document.querySelector(`#${id}`)
-  taskList.removeChild(task)
-}
-
 function clickTask(id){
   let task = document.querySelector(`#${id}`)
 
@@ -55,7 +49,6 @@ function clickTask(id){
     task.className = 'complete'
     task.firstChild.checked = true
   }
-
 }
 
 function removeTask(id){
@@ -66,7 +59,10 @@ function removeTask(id){
 
   tasks = tasks.filter(task => task != text)
 
+
   localStorage.setItem('archive',JSON.stringify(archives))
+
+
   taskList.removeChild(task)
   task.firstChild.remove()
   task.lastElementChild.remove()
